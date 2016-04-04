@@ -1,0 +1,19 @@
+{
+  "name": "crawl",
+  "version": "1.0.0",
+  "description": "Crawl facebook post",
+  "main": "Crawl.js",
+  "dependencies": {
+    "fbgraph": "^1.1.0",
+    "lodash": "^3.10.1",
+    "mysql": "^2.9.0",
+    "squel": "^4.2.2",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cuongduong",
+  "license": "ISC"
+}
