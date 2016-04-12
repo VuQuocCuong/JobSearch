@@ -1,0 +1,9 @@
+#langSwitcherForm, #adSpaceAccount, .featured-companies .view-all, .soc_reg_form {
+	display: none !important;
+}
+.my-account ul {
+	width: 100%;
+}
+.listingInfo {
+	padding-bottom: 50px;
+}
