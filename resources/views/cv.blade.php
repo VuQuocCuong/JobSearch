@@ -4,8 +4,10 @@
 @section('content')
 <!-- Begin content -->
 <h1>MY CV</h1>
-
-<div id="cv" class="instaFade">
+<button type="button">Make CV</button>
+<button type="button">Edit CV</button>
+<button type="button">Download CV</button>
+<!-- <div id="cv" class="instaFade">
 	<div class="mainDetails">
 		<div id="headshot" class="quickFade">
 			<img src="/img/headshot.jpg" alt="Alan Smith" />
@@ -112,8 +114,22 @@
 		</section>
 		
 	</div>
+</div> -->
+
+<!-- Make CV -->
+<div id="make-cv">
+	<h1>Input You imfomantion</h1>
+	<form action="cv_submit" method="get" accept-charset="utf-8">
+		<div><label>Họ & Tên: <input type="text" name="" value=""></label></div>
+		<div><label>Job Title: <input type="text" name="" value=""></label></div>
+		<div><label>Email: <input type="text" name="" value=""></label></div>
+		<div><label>Website: <input type="text" name="" value=""></label></div>
+		<div><label>Số Điện Thoại: <input type="text" name="" value=""></label></div>
+		<div><label>Mô tả cá nhân: <textarea name=""></textarea></label></div>
+		<div><label>Kinh nghiệp làm việc: <input type="text" name="" value=""></label></div>
+		<div><label>Kỹ Năng: <input type="text" name="" value=""></label></div>
+	</form>
 </div>
-</html>
 <!-- End Content -->
 </div>
 @endsection
