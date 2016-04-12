@@ -15,6 +15,13 @@ Route::get('/', function () {
     return view('layout');
 });
 
+
+// Make CV
+Route::get('/cv', function () {
+    return view('cv');
+});
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes

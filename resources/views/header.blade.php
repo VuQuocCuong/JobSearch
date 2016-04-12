@@ -23,5 +23,15 @@
 		@endif
 	</div>
 	</div>
+
+	<div class="clr"></div>
+	<div id="top-menu">
+		<ul>
+			<li><a href="/cv">CV</a></li>
+			<li><a href="#">Menu</a></li>
+			<li><a href="#">Menu</a></li>
+			<li><a href="#">Menu</a></li>
+		</ul>
+	</div>
 </div>
 <div class="clr"></div>

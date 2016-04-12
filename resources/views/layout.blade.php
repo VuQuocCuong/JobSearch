@@ -9,6 +9,7 @@
 	<!-- Style Sheet -->
 	<link rel="stylesheet" href="{{ asset('css/form.css') }}" />
 	<link rel="stylesheet" href="{{ asset('css/design.css') }}" />
+	<link rel="stylesheet" href="{{ asset('css/cv-style.css') }}" />
 	<link rel="stylesheet" href="{{ asset('css/custom.css') }}" />
 	<link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}" />
 	<!-- Javascript -->
@@ -28,9 +29,9 @@
 
 			<!-- Content -->
 			@yield('content')
+			@include('footer')
 		</div>
 		<!-- Footer -->
-		@include('footer')
 	</div>
 </body>
 </html>
