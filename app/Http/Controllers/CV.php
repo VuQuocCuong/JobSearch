@@ -19,7 +19,7 @@
 	        $job_history= $request->input('job_history', '');
 
 
-			DB::table('cv')
+			$cvUpdate = DB::table('cv')
     			->where('id_user', $id_user)
     			->update(['full_name' 	=> $full_name])
     			->update(['email' 		=> $email])
@@ -29,7 +29,7 @@
     			->update(['job_title' 	=> $job_title])
     			->update(['job_history' => $job_history])
     			->update(['skill' 		=> $skill]);
-			return 1;
+			$cvUpdate->save();
 		}
 	}
  ?>

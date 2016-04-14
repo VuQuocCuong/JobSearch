@@ -54,11 +54,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('localhost'),
-            'port' => env('3306'),
-            'database' => env('jobsearch'),
-            'username' => env('root'),
-            'password' => env(''),
+            'host' => 'localhost',
+            'port' => 3306,
+            'database' => 'jobsearch',
+            'username' => 'root',
+            'password' => '',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
