@@ -86,10 +86,9 @@ input[type="text"],
 input[type="password"] {
 	background: url("/img/input-text-bg.png") repeat-x top #fff;
 	border: 1px solid #bababa;
-	padding: 9px 5px;
+	padding: 5px 10px;
 	-webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 1);
 	box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 1);
-	width: 350px;
 }
 .information,
 .error,
