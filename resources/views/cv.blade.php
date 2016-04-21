@@ -11,7 +11,6 @@
 		<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">CV của bạn</a></li>
 		<li role="presentation"><a href="#edit" aria-controls="edit" role="tab" data-toggle="tab">Chỉnh sửa CV</a></li>
 	</ul>
-
 	<!-- Tab panes -->
 	<div class="tab-content">
 		<div role="tabpanel" class="tab-pane active" id="home">
@@ -22,15 +21,15 @@
 					</div>
 					
 					<div id="name">
-						<h1 class="quickFade delayTwo">FULL NAME</h1>
-						<h2 class="quickFade delayThree">Job Title</h2>
+						<h1 class="quickFade delayTwo">{{ $cvs[0]->full_name }}</h1>
+						<h2 class="quickFade delayThree">{{ $cvs[0]->job_title }}</h2>
 					</div>
 					
 					<div id="contactDetails" class="quickFade delayFour">
 						<ul>
-							<li>e: <a href="mailto:joe@bloggs.com" target="_blank">joe@bloggs.com</a></li>
-							<li>w: <a href="http://www.bloggs.com">www.bloggs.com</a></li>
-							<li>m: 01234567890</li>
+							<li>e: <a href="mailto:joe@bloggs.com" target="_blank">{{ $cvs[0]->email }}</a></li>
+							<li>w: <a href="http://www.bloggs.com">{{ $cvs[0]->website }}</a></li>
+							<li>m: {{ $cvs[0]->mobile }}</li>
 						</ul>
 					</div>
 					<div class="clear"></div>
@@ -44,7 +43,7 @@
 							</div>
 							
 							<div class="sectionContent">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor metus, interdum at scelerisque in, porta at lacus. Maecenas dapibus luctus cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+								<p>{{ $cvs[0]->your_info }}</p>
 							</div>
 						</article>
 						<div class="clear"></div>

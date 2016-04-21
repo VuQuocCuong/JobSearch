@@ -20,7 +20,8 @@ Route::get('/', function () {
 Route::get('/cv', function () {
     return view('cv');
 });
-Route::get('/cv/update', 'CV@updateCV');
+Route::get('/cv', 'CvController@getCvById');
+Route::get('/cv/update', 'CvController@updateCV');
 
 
 /*

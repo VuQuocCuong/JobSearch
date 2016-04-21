@@ -4,8 +4,13 @@
 	use DB;
     use Illuminate\Http\Request;
     use View;
+    use App\Cv;
 
-	Class CV extends BaseController {
+	Class CvController extends BaseController {
+		public function getCvById() {
+			$cv = DB::select('select * from cv where id_user = ?', [1]);
+    		return view('cv', ['cvs' => $cv]);
+		}
 		public function updateCV(Request $request)
 		{
 			$id_user = 1; 
@@ -30,6 +35,7 @@
     			->update(['job_history' => $job_history])
     			->update(['skill' 		=> $skill]);
 			$cvUpdate->save();
+			return redirect()->route('cv');
 		}
 	}
  ?>
