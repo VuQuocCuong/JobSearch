@@ -9,10 +9,10 @@ config.mysql        = {
     host            : 'localhost',
     user            : 'root',
     password        : '',
-    database        : 'jobsearch'
+    database        : 'socialjob'
 };
 
 config.tableSource  = "source";
 config.tableJob     = "job";
 
-config.accset_token = "EAAFw6kU8nN4BALDqZChEOwLNmKontcD3Y4soHtanJBxbKEfQ0FmIrLoKOJSfzWRPDlOub6SC5HzOtrSn3hFpXoxt6uQpKMVvPmoDKxH0y210VhZBMAZBBqJwxTZBNb04NXrX0XqF21X8aZBnCAEIb2yhutPVhg6IZD";
+config.accset_token = "CAAFw6jeHF3UBAK8f8Ncduh9YWv01oqQUElpusIhlIu6f4gbUh6g8i0GYifTAedap7DE1AdZAthBGD50NOZAqYdHAbtfF65LFFfWWZA0nZCkrFub5tfOrI5OZCAsjxcHFvzQ3x9Wo0Y1bh4C4UAXicQZC74HTZBB5HNrD7i3UIpxdVdO0sxnFAc3";

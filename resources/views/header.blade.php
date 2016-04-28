@@ -2,7 +2,7 @@
 
 <div id="header">
 	<div id="header-left">
-		<a href="/"><img src="/img/logo.png" border="0" alt="Social Job Search" title="Social Job Search"></a>
+		<a href="/"><img src="../img/logo.png" border="0" alt="Social Job Search" title="Social Job Search"></a>
 		<div class="clr"><br></div>
 	</div>
 	<div id="header-right">
@@ -11,7 +11,7 @@
 		@if ( !($user) )
 		    <div class="login-facebook">
 				<a href="/auth/facebook">
-					<img src="/img/facebook-login.png" alt="facebook login">
+					<img src="../img/facebook-login.png" alt="facebook login">
 				</a>
 			</div>
 		@else
@@ -22,16 +22,6 @@
 			<br>
 		@endif
 	</div>
-	</div>
-
-	<div class="clr"></div>
-	<div id="top-menu">
-		<ul>
-			<li><a href="/cv">CV</a></li>
-			<li><a href="#">Menu</a></li>
-			<li><a href="#">Menu</a></li>
-			<li><a href="#">Menu</a></li>
-		</ul>
 	</div>
 </div>
 <div class="clr"></div>

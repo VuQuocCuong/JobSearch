@@ -84,11 +84,12 @@ h2 {
 }
 input[type="text"],
 input[type="password"] {
-	background: url("/img/input-text-bg.png") repeat-x top #fff;
+	background: url("../img/input-text-bg.png") repeat-x top #fff;
 	border: 1px solid #bababa;
-	padding: 5px 10px;
+	padding: 9px 5px;
 	-webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 1);
 	box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 1);
+	width: 350px;
 }
 .information,
 .error,
@@ -255,7 +256,7 @@ form[name="SavedListingForm"] table tr:last-child .separateListing,
 }
 #header-bg-sitemap,
 #header-bg {
-	background: url("/img/header-bg.png");
+	background: url("../img/header-bg.png");
 	border-top: 4px solid #1c1c1c;
 }
 div#header-bg {
@@ -400,7 +401,111 @@ div#header-bg {
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
+/********************************************************************************/
 
+/* START:Language Switcher Plugin CSS
+*********************************************************************************/
+.sbHolder {
+	font-family: proxima_nova, Arial, sans-serif;
+	height: 19px;
+	position: relative;
+	width: 80px;
+	margin: 0 3px 0 0;
+}
+.sbSelector {
+	display: block;
+	height: 27px;
+	right: 5px;
+	line-height: 31px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 80px;
+	text-align: center;
+	color: #BBECFF !important;
+	text-shadow: 0 -1px 1px #000;
+}
+.sbSelector:link,
+.sbSelector:visited,
+.sbSelector:hover {
+	color: #819C78;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle {
+	background: url("langs.png") 0 0 no-repeat;
+	display: block;
+	height: 9px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 11px;
+	width: 6px;
+}
+.sbToggleOpen {
+	background: url("langs.png") 0 -9px no-repeat;
+}
+.sbOptions {
+	background: #1d1d1d;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	box-shadow: 0 1px 2px 1px #686868;
+	list-style: none;
+	left: 20px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	width: 130px;
+	z-index: 1;
+	overflow-y: auto;
+}
+.sbOptions li {
+	padding: 0 5px 0 10px;
+	line-height: 24px;
+	border-bottom: 1px solid #303032;
+	text-align: left;
+}
+.sbOptions li:last-child {
+	border-bottom: none;
+}
+.sbOptions a {
+	display: block;
+	outline: none;
+	padding: 0 0 0 12px;
+	text-shadow: 0 -1px 1px #000;
+	background: url("list-symbol.png") no-repeat left center;
+}
+.sbOptions a:link,
+.sbOptions a:visited {
+	text-decoration: none;
+}
+.sbOptions li:hover {
+	background: #429abb;
+}
+.sbOptions li.last a,
+.sbOptions li:last-child a {
+	border-bottom: none;
+}
+.sbOptions .sbDisabled,
+.sbOptions .sbGroup {
+	border-bottom: dotted 1px #515151;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbDisabled {
+	color: #999;
+}
+.sbOptions .sbGroup {
+	color: #EBB52D;
+	font-weight: bold;
+}
+.sbOptions .sbSub {
+	padding: 0 0 0 17px;
+}
 /********************************************************************************/
 
 /* START:Employer/Jobseeker Button
@@ -616,10 +721,10 @@ div#quick-search-right {}
 	background: #ED652D;
 }
 .find-button-zoom:hover {
-	background: url("/img/buttons-bg.png") repeat-x 0 -101px;
+	background: url("../img/buttons-bg.png") repeat-x 0 -101px;
 }
 .find-button-zoom {
-	background: url("/img/buttons-bg.png") repeat-x 0 -64px;
+	background: url("../img/buttons-bg.png") repeat-x 0 -64px;
 	border: 1px solid #c43b07;
 	border-radius: 2px;
 }
@@ -785,7 +890,7 @@ div#quick-search-right {}
 /* START:Featured and Latest Jobs
 *********************************************************************************/
 .featured-companies h2 {
-	background: url("/img/icons.png") no-repeat 0 -60px;
+	background: url("../img/icons.png") no-repeat 0 -60px;
 	padding: 0 0 0 25px;
 }
 .FeaturedCompaniesLogo {
@@ -915,7 +1020,7 @@ a.blogLink {
 	text-decoration: none;
 }
 .blogDate {
-	background: url("/img/icons.png") no-repeat 0 -577px;
+	background: url("../img/icons.png") no-repeat 0 -577px;
 	padding: 0 0 0 25px;
 	display: block;
 	clear: both;
@@ -932,7 +1037,7 @@ a.blogLink {
 /* START:News
 *********************************************************************************/
 .latest-news h2 {
-	background: url("/img/icons.png") no-repeat 0 0;
+	background: url("../img/icons.png") no-repeat 0 0;
 	padding: 0 0 0 25px;
 }
 #news {
@@ -957,7 +1062,7 @@ a.blogLink {
 	text-decoration: underline;
 }
 #news .news-date {
-	background: url("/img/icons.png") no-repeat 0 -577px;
+	background: url("../img/icons.png") no-repeat 0 -577px;
 	padding: 0 0 0 25px;
 	clear: both;
 	color: #8c8c8c;
@@ -993,7 +1098,7 @@ a.blogLink {
 /* START:Polls
 *********************************************************************************/
 .polls h2 {
-	background: url("/img/icons.png") no-repeat 0 -39px;
+	background: url("../img/icons.png") no-repeat 0 -39px;
 	padding: 0 0 0 25px;
 }
 #poll {
@@ -1016,7 +1121,7 @@ a.blogLink {
 /* START:Mailchimp Newsletter
 *********************************************************************************/
 .newsletter h2 {
-	background: url("/img/icons.png") no-repeat 0 -21px;
+	background: url("../img/icons.png") no-repeat 0 -21px;
 	padding: 0 0 0 25px;
 	line-height: 18px;
 }
@@ -1056,7 +1161,7 @@ a.blogLink {
 /* START:Footer
 *********************************************************************************/
 #footer {
-	background: url("/img/footer-bg.png");
+	background: url("../img/footer-bg.png");
 }
 #footer-bottom {
 	background: #000;
@@ -1205,7 +1310,7 @@ select {
 	font-size: 14px;
 	padding: 8px 5px;
 	font-family: proxima_nova, Arial, sans-serif;
-	background: url("/img/input-select.png") repeat-x left top;
+	background: url("../img/input-select.png") repeat-x left top;
 	border: 1px solid #CACACA;
 }
 select option {
@@ -1251,7 +1356,7 @@ select,
 	width: 127px !important;
 }
 textarea {
-	background: url("/img/input-text-bg.png") repeat-x top #fff;
+	background: url("../img/input-text-bg.png") repeat-x top #fff;
 	border: 1px solid #a8a8a8;
 	box-shadow: inset 0 0 0 1px #fff;
 	-moz-box-shadow: inset 0 0 0 1px #fff;
@@ -1799,7 +1904,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 a.button {
-	background: url("/img/buttons-bg.png") repeat-x 0 0;
+	background: url("../img/buttons-bg.png") repeat-x 0 0;
 	border-radius: 2px;
 	border: 1px solid #1f4f61;
 	padding: 5px 10px;
@@ -1816,7 +1921,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 a.button:hover {
-	background: url("/img/buttons-bg.png") repeat-x 0 -32px;
+	background: url("../img/buttons-bg.png") repeat-x 0 -32px;
 }
 input.standart-button,
 a.standart-button {
@@ -1855,13 +1960,13 @@ a.standart-button:hover {
 	border-radius: 5px;
 }
 #listing-details-menu .buttonApply {
-	background: url("/img/list-apply.png") no-repeat 5% center, rgb(241,134,75);
-	background: url("/img/list-apply.png") no-repeat 5% center, -moz-linear-gradient(top,  rgba(241,134,75,1) 0%, rgba(194,56,4,1) 100%);
-	background: url("/img/list-apply.png") no-repeat 5% center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,134,75,1)), color-stop(100%,rgba(194,56,4,1)));
-	background: url("/img/list-apply.png") no-repeat 5% center, -webkit-linear-gradient(top,  rgba(241,134,75,1) 0%,rgba(194,56,4,1) 100%);
-	background: url("/img/list-apply.png") no-repeat 5% center, -o-linear-gradient(top,  rgba(241,134,75,1) 0%,rgba(194,56,4,1) 100%);
-	background: url("/img/list-apply.png") no-repeat 5% center, -ms-linear-gradient(top,  rgba(241,134,75,1) 0%,rgba(194,56,4,1) 100%);
-	background: url("/img/list-apply.png") no-repeat 5% center, linear-gradient(to bottom,  rgba(241,134,75,1) 0%,rgba(194,56,4,1) 100%);
+	background: url("../img/list-apply.png") no-repeat 5% center, rgb(241,134,75);
+	background: url("../img/list-apply.png") no-repeat 5% center, -moz-linear-gradient(top,  rgba(241,134,75,1) 0%, rgba(194,56,4,1) 100%);
+	background: url("../img/list-apply.png") no-repeat 5% center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,134,75,1)), color-stop(100%,rgba(194,56,4,1)));
+	background: url("../img/list-apply.png") no-repeat 5% center, -webkit-linear-gradient(top,  rgba(241,134,75,1) 0%,rgba(194,56,4,1) 100%);
+	background: url("../img/list-apply.png") no-repeat 5% center, -o-linear-gradient(top,  rgba(241,134,75,1) 0%,rgba(194,56,4,1) 100%);
+	background: url("../img/list-apply.png") no-repeat 5% center, -ms-linear-gradient(top,  rgba(241,134,75,1) 0%,rgba(194,56,4,1) 100%);
+	background: url("../img/list-apply.png") no-repeat 5% center, linear-gradient(to bottom,  rgba(241,134,75,1) 0%,rgba(194,56,4,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F1864B', endColorstr='#C23804',GradientType=0 );
 	width: 100%;
 	border: 1px solid #c43b07;
@@ -1871,13 +1976,13 @@ a.standart-button:hover {
 	font-size: 18px;
 }
 #listing-details-menu .buttonApply:hover {
-	background: url("/img/list-apply.png") no-repeat 5% center, rgb(241,134,75);
-	background: url("/img/list-apply.png") no-repeat 5% center, -moz-linear-gradient(top,  #FFA166 0%, #D74D19 100%);
-	background: url("/img/list-apply.png") no-repeat 5% center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFA166), color-stop(100%,#D74D19));
-	background: url("/img/list-apply.png") no-repeat 5% center, -webkit-linear-gradient(top,  #FFA166 0%,#D74D19 100%);
-	background: url("/img/list-apply.png") no-repeat 5% center, -o-linear-gradient(top,  #FFA166 0%,#D74D19 100%);
-	background: url("/img/list-apply.png") no-repeat 5% center, -ms-linear-gradient(top,  #FFA166 0%,#D74D19 100%);
-	background: url("/img/list-apply.png") no-repeat 5% center, linear-gradient(to bottom,  #FFA166 0%,#D74D19 100%);
+	background: url("../img/list-apply.png") no-repeat 5% center, rgb(241,134,75);
+	background: url("../img/list-apply.png") no-repeat 5% center, -moz-linear-gradient(top,  #FFA166 0%, #D74D19 100%);
+	background: url("../img/list-apply.png") no-repeat 5% center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFA166), color-stop(100%,#D74D19));
+	background: url("../img/list-apply.png") no-repeat 5% center, -webkit-linear-gradient(top,  #FFA166 0%,#D74D19 100%);
+	background: url("../img/list-apply.png") no-repeat 5% center, -o-linear-gradient(top,  #FFA166 0%,#D74D19 100%);
+	background: url("../img/list-apply.png") no-repeat 5% center, -ms-linear-gradient(top,  #FFA166 0%,#D74D19 100%);
+	background: url("../img/list-apply.png") no-repeat 5% center, linear-gradient(to bottom,  #FFA166 0%,#D74D19 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFA166', endColorstr='#D74D19',GradientType=0 );
 }
 #listing-details-menu .apply-now-li {
@@ -2516,7 +2621,7 @@ a.standart-button:hover {
 	margin: 0 5px 0 0;
 }
 .more {
-	background: url("/img/more-opt.png") no-repeat center;
+	background: url("../img/more-opt.png") no-repeat center;
 }
 .less {
 	background: url("delete.png") no-repeat center;
@@ -2591,7 +2696,7 @@ a.standart-button:hover {
 		vertical-align: top;
 }
 .add {
-	background: url("/img/more-opt.png") no-repeat left center;
+	background: url("../img/more-opt.png") no-repeat left center;
 	color: #ce4a14;
 	margin: 5px 0;
 	padding: 2px 0 0 20px;
@@ -2615,7 +2720,7 @@ a.standart-button:hover {
 .viewMapIco a span,
 .panel-pdf-version-resume a span {
 	padding: 0 0 0 24px;
-	background: url("/img/icons.png") no-repeat;
+	background: url("../img/icons.png") no-repeat;
 }
 .panelSavedIco a span {
 	background-position: 0 -179px;
@@ -2643,7 +2748,7 @@ a.standart-button:hover {
 .add-notes,
 .edit-notes,
 .viewVideo {
-	background: url("/img/icons.png") no-repeat;
+	background: url("../img/icons.png") no-repeat;
 	padding: 0 0 0 25px;
 }
 .save-ad {
@@ -2691,7 +2796,7 @@ a.standart-button:hover {
 #showBriefOrDetailed,
 #listView-icon,
 #mapView-icon {
-	background: url("/img/icons.png") no-repeat;
+	background: url("../img/icons.png") no-repeat;
 	padding: 0 0 0 28px;
 }
 #showBriefOrDetailed {
@@ -3017,7 +3122,7 @@ table#invoice-table td {
 .slb_linkedin,
 .slb_google_plus,
 .slb_facebook {
-	background: url(/img/social-buttons.png) no-repeat;
+	background: url(../img/social-buttons.png) no-repeat;
 	width: 20px;
 	height: 20px;
 	display: inline-block;
@@ -3552,7 +3657,7 @@ table.main thead td.currentColumn {
 	width: 157px !important;
 }
 input#state {
-	background: url("/img/input-text-bg.png") repeat-x top #fff;
+	background: url("../img/input-text-bg.png") repeat-x top #fff;
 	border: 1px solid #bababa;
 	padding: 9px 5px;
 	-webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 1);
@@ -3869,7 +3974,7 @@ input.captcha {
 	padding: 8px 0;
 }
 .post-job span {
-	background: url("/img/icons.png") no-repeat 0 -503px;
+	background: url("../img/icons.png") no-repeat 0 -503px;
 	padding: 0 0 0 24px;
 }
 .right-buts .post-job:hover {
@@ -3919,7 +4024,7 @@ input.captcha {
 }
 .search-resume span,
 .get-resume span {
-	background: url("/img/icons.png") no-repeat;
+	background: url("../img/icons.png") no-repeat;
 	padding: 0 0 0 25px;
 }
 .search-resume span {
